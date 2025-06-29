@@ -1,0 +1,95 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 420px;
+  margin: 30px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+form {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  background: #00e396;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #02c48b;
+}
+
+.student {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(3px);
+}
+
+.student span {
+  flex: 1;
+  color: #fff;
+  font-weight: 500;
+}
+
+.student button {
+  margin-left: 6px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.student button:nth-child(2) {
+  background: #28a745; /* ✅ Present */
+}
+
+.student button:nth-child(3) {
+  background: #dc3545; /* ❌ Absent */
+}
+
+.student button:nth-child(4) {
+  background: #6c757d; /* 🗑️ Delete */
+}
+
+.student button:hover {
+  opacity: 0.9;
+}
+
+#stats {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
